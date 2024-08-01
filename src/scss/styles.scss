@@ -1,9 +1,23 @@
 @import 'fonts.scss';
 @import 'libs.scss';
+@import 'colors.scss';
 
 //код писать тута -->
 body {
     background-color: #030303;
+    color: white;
+}
+.section-title {
+    font-family: 'Gilroy-Bold';
+    font-size: 30px;
+    letter-spacing: 2%;
+    color: #FBFBFB;
+}
+.section-subtitle {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: #DDDDDD;
 }
 
 @import 'media_queries.scss';
