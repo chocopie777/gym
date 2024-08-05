@@ -6,46 +6,60 @@
 })
 
 <body>
-    <div class="container-fhd">
-        @@include('components/header.html')
-        <main>
-            <section class="first-screen">
-                <div class="first-screen__inner">
-                    <div class="container-xl">
-                        <div class="row">
-                            <div class="col-8 first-screen__title">
-                                <img src="img/img-text-first-screen.png" alt="сделай себя сильным">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-5">
-                                <ul class="list-first-screen">
-                                    <li class="list-first-screen__item">Создавайте себя в уникальном фитнес-клубе</li>
-                                    <li class="list-first-screen__item">Всегда рабочая обстановка</li>
-                                    <li class="list-first-screen__item">Опытные тренера</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <a class="btn-more-details" href="#">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 d-flex align-items-center arrow-wrapper">
-                                <img src="../img/listai-vniz-arrow.png" alt="стрелка вниз">
-                                <span class="text-arrow">Листай вниз</span>
-                            </div>
+    @@include('components/header.html')
+    <main>
+        <section class="first-screen">
+            <div class="first-screen__inner">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-8 first-screen__title">
+                            <img src="img/img-text-first-screen.png" alt="сделай себя сильным">
                         </div>
                     </div>
-                    <div class="first-screen-bg"></div>
-                    <div class="first-screen-man"></div>
+                    <div class="row">
+                        <div class="col-5">
+                            <ul class="list-first-screen">
+                                <li class="list-first-screen__item">Создавайте себя в уникальном фитнес-клубе</li>
+                                <li class="list-first-screen__item">Всегда рабочая обстановка</li>
+                                <li class="list-first-screen__item">Опытные тренера</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <a class="btn-more-details" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 d-flex align-items-center arrow-wrapper">
+                            <img src="../img/listai-vniz-arrow.png" alt="стрелка вниз">
+                            <span class="text-arrow">Листай вниз</span>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-        @@include('components/footer.html')
-        @@include('components/script.html')
-    </div>
+            </div>
+        </section>
+        <section class="photo-zala">
+            <div class="photo-zala__inner">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-3">
+                            <h2 class="section-title">
+                                Фото зала
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('components/footer.html')
+    @@include('components/script.html')
 </body>
 
 </html>
