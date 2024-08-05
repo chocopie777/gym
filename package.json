@@ -28,7 +28,7 @@
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html-nosvg": "^1.1.1",
     "normalize.css": "^8.0.1",
-    "sass": "^1.71.1",
+    "sass": "1.77.6",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {

@@ -1,23 +1,160 @@
 @import 'fonts.scss';
 @import 'libs.scss';
 @import 'colors.scss';
+@import 'functions.scss';
 
 //код писать тута -->
 body {
     background-color: #030303;
     color: white;
 }
+
 .section-title {
     font-family: 'Gilroy-Bold';
     font-size: 30px;
     letter-spacing: 2%;
     color: #FBFBFB;
 }
+
 .section-subtitle {
     font-family: 'Gilroy-Regular';
     font-size: 16px;
     letter-spacing: 4%;
     color: #DDDDDD;
+}
+
+.header__inner {
+    height: 76px;
+    margin-top: 21px;
+}
+
+.text-logo {
+    font-family: "Gilroy-SemiBold";
+    font-size: 11px;
+    letter-spacing: 0;
+    color: #B1B1B1;
+    margin-top: 2px;
+}
+
+.text-block {
+    margin-left: 6px;
+}
+
+.menu__list-item+.menu__list-item {
+    margin-left: 24px;
+}
+
+.menu__list-link {
+    font-family: "Gilroy-Regular";
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.phone__link {
+    color: white;
+    text-decoration: none;
+    font-family: "Gilroy-Regular";
+    font-size: 19px;
+    letter-spacing: 0.02em;
+}
+
+.bg-first-screen {
+    background-image: url('../img/bg-first-screen.png');
+    width: 1183px;
+    height: 2154px;
+    background-size: contain;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.first-screen {
+    margin-top: 111px;
+}
+
+.first-screen__title {
+    margin-bottom: 41px;
+}
+
+.list-first-screen__item {
+    font-family: "Gilroy-Regular";
+    color: #DDDDDD;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    padding-left: 15px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        content: '';
+        height: 10px;
+        width: 10px;
+        background-image: url('../img/decor-first-screen-text.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &+.list-first-screen__item {
+        margin-top: 14px;
+    }
+}
+
+.btn-more-details {
+    display: inline-block;
+    margin-top: 68px;
+    background: linear-gradient(#FE0036, #980823);
+    font-family: "Gilroy-Regular";
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: em(14, 12) em(14, 28);
+}
+
+.text-arrow {
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #FBFBFB;
+    margin-left: 15px;
+}
+
+.arrow-wrapper {
+    margin-top: 172px;
+}
+
+.container-fhd {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.first-screen-bg {
+    background-image: url('../img/bg-first-screen.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1183px;
+    height: 2154px;
+    z-index: -1;
+}
+
+.first-screen-man {
+    background-image: url('../img/man.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1187px;
+    height: 966px;
+    z-index: 1;
 }
 
 @import 'media_queries.scss';
