@@ -11,7 +11,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-) !default;
+  ) !default;
 //ширина контейнера
 $container-max-widths: (
   sm: 540px,
@@ -19,4 +19,6 @@ $container-max-widths: (
   lg: 960px,
   xl: 1170px,
   ) !default;
+//включние css grid
+$enable-cssgrid: true;
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';

@@ -198,4 +198,87 @@ body {
     }
 }
 
+.gallery {
+    margin-top: 78px;
+}
+
+.gallery__photo1 {
+    width: 263px;
+    height: 580px;
+}
+
+.gallery__photo1-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -108px;
+}
+
+.gallery__item1 {
+    height: 612px;
+}
+
+.gallery__title {
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #DDDDDD;
+}
+
+.gallery__item2,
+.gallery__item3,
+.gallery__item4,
+.gallery__item5 {
+    height: 291px;
+}
+
+.gallery__photo2 {
+    width: 457px;
+    height: 260px;
+}
+
+.gallery__photo2-img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+.gallery__photo3-img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: -41px -61px;
+}
+
+.gallery__photo3 {
+    width: 360px;
+    height: 260px;
+}
+
+.gallery__photo4-img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: -260px -149px;
+}
+
+.gallery__photo4 {
+    width: 457px;
+    height: 260px;
+}
+
+.gallery__photo5-img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: 0 0    ;
+}
+
+.gallery__photo5 {
+    width: 360px;
+    height: 260px;
+}
+.gallery__blackout {
+    
+}
+
 @import 'media_queries.scss';
