@@ -16,13 +16,6 @@ body {
     color: #FBFBFB;
 }
 
-.section-subtitle {
-    font-family: 'Gilroy-Regular';
-    font-size: 16px;
-    letter-spacing: 4%;
-    color: #DDDDDD;
-}
-
 .header__inner {
     height: 76px;
     margin-top: 21px;
@@ -242,6 +235,7 @@ body {
     height: 100%;
     object-fit: none;
 }
+
 .gallery__photo3-img {
     width: 100%;
     height: 100%;
@@ -270,15 +264,144 @@ body {
     width: 100%;
     height: 100%;
     object-fit: none;
-    object-position: 0 0    ;
+    object-position: 0 0;
 }
 
 .gallery__photo5 {
     width: 360px;
     height: 260px;
 }
-.gallery__blackout {
-    
+
+.gallery-blackout {
+    position: relative;
+}
+
+.blackout {
+    background: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .2;
+}
+
+.gallery__photo1 {
+    position: relative;
+
+    &::before {
+        content: url('../img/glow.svg');
+        position: absolute;
+        left: -365px;
+        top: -120px;
+        z-index: -1;
+    }
+}
+
+.gallery__photo2 {
+    position: relative;
+
+    &::before {
+        content: url('../img/glow.svg');
+        position: absolute;
+        right: -220px;
+        top: -300px;
+        z-index: -1;
+    }
+}
+
+.gallery__photo3 {
+    position: relative;
+
+    &::before {
+        content: url('../img/glow.svg');
+        position: absolute;
+        right: -360px;
+        top: -260px;
+        z-index: -1;
+    }
+}
+
+.gallery__photo4 {
+    position: relative;
+
+    &::before {
+        content: url('../img/glow.svg');
+        position: absolute;
+        right: -250px;
+        top: -230px;
+        z-index: -1;
+    }
+}
+
+.gallery__photo5 {
+    position: relative;
+
+    &::before {
+        content: url('../img/glow.svg');
+        position: absolute;
+        right: -250px;
+        top: -260px;
+        z-index: -1;
+    }
+}
+
+.about {
+    margin-top: 192px;
+}
+
+.section-subtitle {
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #DDDDDD;
+}
+
+.about__subtitle {
+    margin-top: 20px;
+}
+
+.sarichev-bg {
+    background: url('../img/sarichev.png');
+    position: absolute;
+    width: 1176px;
+    height: 1426px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.pro-nash-zal-link {
+    position: absolute;
+    text-decoration: none;
+    left: 467px;
+    top: 649px;
+    span {
+        font-family: "Gilroy-Regular";
+        color: #FBFBFB;
+        font-size: 16px;
+        text-align: center;
+        margin-top: -10px;
+    }
+}
+.about__description-text {
+    margin-top: 270px;
+    margin-right: 67px;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #DDDDDD;
+    line-height: 150%;
+}
+.zadat-vopros {
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: linear-gradient(#FE0036, #980823);
+    padding: em(16, 11) em(16, 24);
+    display: inline-block;
+    margin-top: 70px;
 }
 
 @import 'media_queries.scss';
