@@ -14,6 +14,10 @@ body {
     font-size: 30px;
     letter-spacing: 2%;
     color: #FBFBFB;
+
+    span {
+        color: #FE0036;
+    }
 }
 
 .header__inner {
@@ -376,6 +380,7 @@ body {
     text-decoration: none;
     left: 467px;
     top: 649px;
+
     span {
         font-family: "Gilroy-Regular";
         color: #FBFBFB;
@@ -384,6 +389,7 @@ body {
         margin-top: -10px;
     }
 }
+
 .about__description-text {
     margin-top: 270px;
     margin-right: 67px;
@@ -393,6 +399,7 @@ body {
     color: #DDDDDD;
     line-height: 150%;
 }
+
 .zadat-vopros {
     font-family: "Gilroy-Regular";
     font-size: 16px;
@@ -402,6 +409,79 @@ body {
     padding: em(16, 11) em(16, 24);
     display: inline-block;
     margin-top: 70px;
+}
+
+.prices {
+    margin-top: 499px;
+}
+
+.prices_subtitle-text {
+    margin-top: 23px;
+}
+
+.prices__item {
+    background: url('../img/prices-item-bg.png');
+    width: 263px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prices__list {
+    margin-top: 84px;
+}
+
+.prices__item-title {
+    font-family: "Gilroy-SemiBold";
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 42px;
+
+    span {
+        color: #FE0036;
+    }
+}
+
+.prices__item-description {
+    color: #DDDDDD;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    margin-top: 28px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.prices__item-price {
+    font-family: "Gilroy-SemiBold";
+    font-size: 22px;
+    color: #FFFFFF;
+    text-align: center;
+
+    span {
+        color: #FE0036;
+    }
+}
+
+.prices__item-link {
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(#FE0036, #980823);
+    padding: em(16, 11) 0;
+    width: 190px;
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 47px;
+    text-align: center;
 }
 
 @import 'media_queries.scss';
