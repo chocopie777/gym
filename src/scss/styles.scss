@@ -107,7 +107,7 @@ body {
 .btn-more-details {
     display: inline-block;
     margin-top: 68px;
-    background: linear-gradient(#FE0036, #980823);
+    background: linear-gradient(to right,#FE0036, #980823);
     font-family: "Gilroy-Regular";
     font-size: 14px;
     color: #FFFFFF;
@@ -405,7 +405,7 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     text-decoration: none;
-    background: linear-gradient(#FE0036, #980823);
+    background: linear-gradient(to right, #FE0036, #980823);
     padding: em(16, 11) em(16, 24);
     display: inline-block;
     margin-top: 70px;
@@ -475,7 +475,7 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: white;
-    background: linear-gradient(#FE0036, #980823);
+    background: linear-gradient(to right, #FE0036, #980823);
     padding: em(16, 11) 0;
     width: 190px;
     margin-top: 30px;
@@ -538,10 +538,264 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .reviews {
     position: relative;
+}
+
+.reviews-slider__item-sm-text {
+    font-family: "Gilroy-Light";
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #DDDDDD;
+    display: block;
+}
+
+.reviews-slider__item-name-text {
+    font-family: "Gilroy-SemiBold";
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    font-size: 20px;
+    margin-top: 9px;
+    display: block;
+}
+
+.reviews-slider__item-review-text {
+    font-family: "Gilroy-Regular";
+    color: #DDDDDD;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 150%;
+    margin-top: 23px;
+}
+
+.reviews-slider {
+    margin-top: 321px;
+}
+
+ul.slick-dots {
+    display: flex;
+    margin-top: 38px;
+    line-height: 0;
+    align-items: center;
+
+    li button {
+        background: linear-gradient(to right, #FE0036, #980823);
+        border: none;
+        height: 6px;
+        width: 6px;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+
+    li+li {
+        margin-left: 17px;
+    }
+
+    .slick-active button {
+        width: 12px;
+        height: 12px;
+    }
+
+    li {
+        display: flex;
+    }
+}
+
+.questions {
+    margin-top: 487px;
+    margin-bottom: 149px;
+}
+
+.questions__title {
+    font-family: "Gilroy-Medium";
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    color: #FBFBFB;
+    margin-bottom: 11px;
+}
+
+.questions__subtitle {
+    font-family: "Gilroy-Regular";
+    color: #B1B1B1;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 51px;
+}
+
+.questions-form__input {
+    position: relative;
+    padding: 0;
+    border: none;
+    font-family: "Gilroy-Light";
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B1B1B1;
+    height: 49px;
+    width: 331px;
+    background: transparent;
+
+    &::placeholder {
+        font-size: 16px;
+        color: #B1B1B1;
+    }
+}
+
+.questions-form__wrapper-inp {
+    margin-bottom: 29px;
+}
+
+.questions-form__send-btn {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    padding: em(16, 10) em(16, 33);
+    background: linear-gradient(to right, #FE0036, #980823);
+    display: inline-block;
+}
+
+.questions__condition-text {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #B1B1B1;
+    font-family: "Gilroy-Regular";
+
+    span {
+        font-family: "Gilroy-SemiBold";
+    }
+}
+
+.questions-form__wrapper-btn {
+    margin-bottom: 16px;
+}
+
+.questions-form__input-wrap {
+    position: relative;
+
+    &+.questions-form__input-wrap {
+        margin-left: 28px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 300px;
+        background: #C4C4C4;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.questions-form__wrap-btn {
+    margin-right: 50px;
+}
+
+.questions__condition-text {
+    max-width: 580px;
+    text-align: center;
+    margin-right: 7px;
+}
+
+.contact {
+    position: absolute;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 79px;
+    padding-bottom: 103px;
+    background-color: #030303;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -61px;
+}
+
+.contact__text {
+    display: block;
+    font-family: "Gilroy-Regular";
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+
+.contact__title {
+    margin-bottom: 45px;
+}
+
+.contact__address {
+    margin-bottom: 35px;
+}
+
+.contact__phone {
+    margin-bottom: 9px;
+}
+
+.contacts .container-xl {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer__inner {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer .menu__list-link {
+    color: #FBFBFB;
+}
+
+.vk-link {
+    margin-left: 18px;
+    margin-top: 3px;
+}
+
+.insta-link {
+    margin-top: 3px;
+    margin-left: 9px;
+}
+
+.footer__wrap-head {
+    margin-bottom: 59px;
+}
+
+.politika-conf {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-family: "Gilroy-Regular";
+    font-weight: 400;
+    color: #B1B1B1;
+}
+
+.copyright {
+    font-size: 16px;
+    font-family: "Gilroy-Regular";
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #B1B1B1;
+
+    .year {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    .copy {
+        font-size: 18px;
+        letter-spacing: 0;
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#FD0036, #980723);
+    }
 }
 
 @import 'media_queries.scss';
