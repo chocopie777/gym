@@ -1,1 +1,74 @@
 //медиа запросы @media (max-width: 1200px) {}
+@media (max-width: 992px) {
+    .menu {
+        order: 1;
+    }
+
+    .menu__list {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        position: absolute;
+        background-color: black;
+        left: -15px;
+        right: -15px;
+        top: -21px;
+        padding-top: 10px !important;
+        transform: translateY(-100%);
+        transition: all .5s ease-in;
+    }
+
+    .burger-btn {
+        cursor: pointer;
+        width: 22px;
+        height: 14px;
+        position: relative;
+        margin-bottom: 2px;
+        z-index: 1;
+    }
+
+    .burger-btn span {
+        &:nth-child(1) {
+            position: absolute;
+            width: 22px;
+            height: 2px;
+            background: white;
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            width: 18px;
+            height: 2px;
+            background: white;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+
+        &:nth-child(3) {
+            position: absolute;
+            width: 22px;
+            height: 2px;
+            background: white;
+            bottom: 0;
+        }
+    }
+
+    .phone__link {
+        font-size: 16px;
+    }
+
+    .show-menu {
+        transform: translate(0);
+        transition: all .5s ease-in;
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+}

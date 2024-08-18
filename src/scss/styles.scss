@@ -19,6 +19,10 @@ body {
         color: #FE0036;
     }
 }
+.header {
+    padding-bottom: 210px;
+    position: relative;
+}
 
 .header__inner {
     height: 76px;
@@ -57,13 +61,6 @@ body {
     font-family: "Gilroy-Regular";
     font-size: 19px;
     letter-spacing: 0.02em;
-}
-
-.bg-first-screen {
-    background-image: url('../img/bg-first-screen.png');
-    width: 1183px;
-    height: 2154px;
-    background-size: contain;
 }
 
 .wrapper {
@@ -107,7 +104,7 @@ body {
 .btn-more-details {
     display: inline-block;
     margin-top: 68px;
-    background: linear-gradient(to right,#FE0036, #980823);
+    background: linear-gradient(to right, #FE0036, #980823);
     font-family: "Gilroy-Regular";
     font-size: 14px;
     color: #FFFFFF;
@@ -134,25 +131,17 @@ body {
 }
 
 .first-screen-bg {
-    background-image: url('../img/bg-first-screen.png');
-    background-repeat: no-repeat;
+    overflow-x: hidden;
     position: absolute;
-    right: 0;
     top: -21px;
-    width: 1183px;
-    height: 2154px;
     z-index: -1;
+    right: -390px;
 }
 
 .first-screen-man {
-    background-image: url('../img/man.png');
-    background-repeat: no-repeat;
     position: absolute;
-    right: 0;
     top: -21px;
-    width: 1187px;
-    height: 966px;
-    z-index: 1;
+    right: -390px;
 }
 
 .first-screen-link-more {
@@ -168,10 +157,6 @@ body {
     span {
         margin-top: -8px;
     }
-}
-
-.photo-zala {
-    margin-top: 210px;
 }
 
 .section-title {
@@ -794,8 +779,12 @@ ul.slick-dots {
         letter-spacing: 0;
         color: transparent;
         background-clip: text;
-        background-image: linear-gradient(to right,#FD0036, #980723);
+        background-image: linear-gradient(to right, #FD0036, #980723);
     }
+}
+
+.header__wrapper {
+    position: relative;
 }
 
 @import 'media_queries.scss';

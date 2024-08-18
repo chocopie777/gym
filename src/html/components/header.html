@@ -1,15 +1,20 @@
-<div class="container-fhd">
-    <header class="header">
-        <div class="container-xl">
-            <div class="row header__inner">
-                <div class="col-3 d-flex align-items-center logo">
+<header class="header" style="overflow: hidden;">
+    <div class="container-xl">
+        <div class="header__wrapper">
+            <div class="d-flex justify-content-between header__inner">
+                <div class="d-flex align-items-center logo">
                     <img src="img/logo.svg" alt="logo">
                     <div class="d-flex flex-column text-block">
                         <img src="img/img-logo-text.png" alt="Спарта">
                         <span class="text-logo">ФИТНЕС - КЛУБ</span>
                     </div>
                 </div>
-                <nav class="col-6 menu d-flex justify-content-center align-items-center">
+                <nav class="menu d-flex justify-content-center align-items-center">
+                    <div class="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <ul class="menu__list d-flex">
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="#">О зале</a>
@@ -28,19 +33,53 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="col-3 d-flex align-items-center justify-content-end phone">
+                <div class="d-flex align-items-center justify-content-end phone">
                     <a class="phone__link" href="tel:+74954208800">8 495 420-88-00</a>
                 </div>
             </div>
+            <div class="row first-screen">
+                <div class="first-screen__inner">
+                    <div class="row">
+                        <div class="col-8 first-screen__title">
+                            <img src="img/img-text-first-screen.png" alt="сделай себя сильным">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <ul class="list-first-screen">
+                                <li class="list-first-screen__item">Создавайте себя в уникальном фитнес-клубе</li>
+                                <li class="list-first-screen__item">Всегда рабочая обстановка</li>
+                                <li class="list-first-screen__item">Опытные тренера</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <a class="btn-more-details" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 d-flex align-items-center arrow-wrapper">
+                            <img src="../img/listai-vniz-arrow.png" alt="стрелка вниз">
+                            <span class="text-arrow">Листай вниз</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img class="first-screen-bg" src="img/bg-first-screen.png" alt="background">
+                            <img class="first-screen-man" src="img/man.png" alt="man">
+                            <!-- <div class="first-screen-man">
+                                <a class="d-flex flex-column first-screen-link-more" href="#">
+                                    <img src="img/btn-uznat-bolshe-o-nas.svg" alt="кнопка узнать больше">
+                                    <span>
+                                        Узнайте больше о нас
+                                    </span>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <div class="first-screen-bg"></div>
-    <div class="first-screen-man">
-        <a class="d-flex flex-column first-screen-link-more" href="#">
-            <img src="img/btn-uznat-bolshe-o-nas.svg" alt="кнопка узнать больше">
-            <span>
-                Узнайте больше о нас
-            </span>
-        </a>
     </div>
-</div>
+</header>
