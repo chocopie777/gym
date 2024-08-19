@@ -143,16 +143,15 @@ body {
     top: -21px;
     right: -390px;
 }
-
 .first-screen-link-more {
     position: absolute;
-    top: 484px;
-    left: 298px;
     font-family: "Gilroy-Regular";
     font-size: 14px;
     letter-spacing: 0.02em;
     color: white;
     text-decoration: none;
+    top: -360px;
+    right: 420px;
 
     span {
         margin-top: -8px;
@@ -786,5 +785,14 @@ ul.slick-dots {
 .header__wrapper {
     position: relative;
 }
-
+.first-screen-bg-mobile {
+    display: none;
+}
+.inner_bg {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 @import 'media_queries.scss';
