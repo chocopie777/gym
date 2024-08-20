@@ -8,11 +8,11 @@
 <body>
     @@include('components/header.html')
     <main>
-        <!-- <section class="photo-zala">
+        <section class="photo-zala">
             <div class="photo-zala__inner">
                 <div class="container-xl">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="g-col-12 g-col-lg-3">
                             <h2 class="section-title">
                                 Фото зала
                             </h2>
@@ -20,8 +20,8 @@
                     </div>
                     <div class="gallery">
                         <div class="row">
-                            <div class="grid" style="--bs-gap: 29px;">
-                                <div class="g-col-3">
+                            <div class="grid gap-grid" style="--bs-gap: 29px;">
+                                <div class="g-col-12 g-col-lg-3">
                                     <div class="d-flex flex-column justify-content-between gallery__item1">
                                         <div class="gallery__photo1 gallery-blackout">
                                             <img class="gallery__photo1-img" src="../img/photo-zala1.jpg"
@@ -33,9 +33,9 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="g-col-9" style="--bs-columns: 9;">
-                                    <div class="grid">
-                                        <div class="g-col-5">
+                                <div class="g-col-12 g-col-lg-9" style="--bs-columns: 9;">
+                                    <div class="grid gap-grid">
+                                        <div class="g-col-9 g-col-lg-5">
                                             <div class="d-flex flex-column justify-content-between gallery__item2">
                                                 <div class="gallery__photo2 gallery-blackout">
                                                     <img class="gallery__photo2-img" src="../img/photo-zala2.jpg"
@@ -47,7 +47,7 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="g-col-4">
+                                        <div class="g-col-9 g-col-lg-4">
                                             <div class="d-flex flex-column justify-content-between gallery__item3">
                                                 <div class="gallery__photo3 gallery-blackout">
                                                     <img class="gallery__photo3-img" src="../img/photo-zala3.png"
@@ -59,7 +59,7 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="g-col-5">
+                                        <div class="g-col-9 g-col-lg-5">
                                             <div class="d-flex flex-column justify-content-between gallery__item4">
                                                 <div class="gallery__photo4 gallery-blackout">
                                                     <img class="gallery__photo4-img" src="../img/photo-zala4.jpg"
@@ -71,7 +71,7 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="g-col-4">
+                                        <div class="g-col-9 g-col-lg-4">
                                             <div class="d-flex flex-column justify-content-between gallery__item5">
                                                 <div class="gallery__photo5 gallery-blackout">
                                                     <img class="gallery__photo5-img" src="../img/photo-zala5.jpg"
@@ -92,18 +92,18 @@
             </div>
         </section>
         <section class="about">
-            <div class="container-fhd">
-                <div class="about__inner">
-                    <div class="container-xl">
+            <div class="about__wrapper">
+                <div class="container-xl">
+                    <div class="about__inner">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col col-lg-2">
                                 <h2 class="section-title">
                                     О зале
                                 </h2>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-9">
+                            <div class="col col-lg-9">
                                 <h6 class="section-subtitle about__subtitle">
                                     Мы гордимся своим залом и его историей. Будем рады видеть вас среди наших
                                     посетителей
@@ -111,7 +111,20 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 offset-6">
+                            <div class="col">
+                                <img class="sarichev-bg" src="../img/sarichev.png" alt="sarichev">
+                                <a href="#" class="d-flex flex-column align-items-center pro-nash-zal-link">
+                                    <img src="img/pro-nash-zal-btn.svg" alt="кнопка включить видео">
+                                    <span>
+                                        Кирилл Сарычев
+                                        <br>
+                                        про наш зал
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-lg-6 offset-lg-6">
                                 <p class="about__description-text">
                                     Тренажерный зал фитнес-клуба «Спарта» открывает огромные возможности для занятий как
                                     обычным фитнесом, так и профессиональным бодибилдингом для новичков
@@ -130,25 +143,15 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-2 offset-6">
+                            <div class="col col-xl-2 offset-lg-6 d-flex justify-content-center d-lg-block">
                                 <a href="#" class="zadat-vopros">Задать вопрос</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="sarichev-bg">
-                    <a href="#" class="d-flex flex-column align-items-center pro-nash-zal-link">
-                        <img src="img/pro-nash-zal-btn.svg" alt="кнопка включить видео">
-                        <span>
-                            Кирилл Сарычев
-                            <br>
-                            про наш зал
-                        </span>
-                    </a>
-                </div>
             </div>
         </section>
-        <section class="prices">
+        <!-- <section class="prices">
             <div class="container-fhd">
                 <div class="prices__inner">
                     <div class="container-xl">

@@ -1,5 +1,16 @@
 //медиа запросы @media (max-width: 1200px) {}
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+
+    .gallery__photo1,
+    .gallery__photo2,
+    .gallery__photo3,
+    .gallery__photo4,
+    .gallery__photo5 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
     .menu {
         order: 1;
     }
@@ -122,12 +133,121 @@
 
     .first-screen-link-more {
         align-items: center;
+
         img {
             height: 93px;
             width: 93px;
         }
-        top: 50%;
-        right: 50%;
+
+        top: 55%;
+        right: 44%;
         transform: translate(50%, 50%);
+    }
+
+    .header {
+        padding-bottom: 54px;
+    }
+
+    .section-title::before {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .gallery {
+        margin-top: 32px;
+    }
+
+    .gallery__title {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .gallery__photo1::before,
+    .gallery__photo2::before,
+    .gallery__photo3::before,
+    .gallery__photo4::before,
+    .gallery__photo5::before {
+        display: none;
+    }
+
+    .gallery__photo1-img,
+    .gallery__photo2-img,
+    .gallery__photo3-img,
+    .gallery__photo4-img,
+    .gallery__photo5-img {
+        object-fit: none;
+        object-position: left;
+    }
+
+    .gallery__photo1,
+    .gallery__photo2,
+    .gallery__photo3,
+    .gallery__photo4,
+    .gallery__photo5 {
+        height: 190px;
+    }
+
+    .gallery__item1,
+    .gallery__item2,
+    .gallery__item3,
+    .gallery__item4,
+    .gallery__item5 {
+        height: auto;
+    }
+
+    .gap-grid {
+        --bs-gap: 29px 5px !important;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+    }
+
+    .about__description-text {
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        line-height: 150%;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+
+    .zadat-vopros {
+        margin-top: 32px;
+    }
+
+    .sarichev-bg {
+        position: static;
+        width: 100%;
+        object-fit: contain;
+        height: unset;
+        transform: scale(1.1);
+    }
+
+    .photo-zala__inner {
+        padding-bottom: 77px;
+        padding-top: 15px;
+    }
+
+    .pro-nash-zal-link {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        img {
+            width: 168px;
+            height: 168px;
+        }
+
+        span {
+            margin-top: -40px;
+        }
+    }
+    .about__wrapper {
+        overflow-x: hidden;
     }
 }
