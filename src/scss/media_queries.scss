@@ -8,6 +8,10 @@
     .gallery__photo5 {
         width: 100%;
     }
+
+    .prices__item {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -247,7 +251,59 @@
             margin-top: -40px;
         }
     }
+
     .about__wrapper {
         overflow-x: hidden;
+    }
+
+    .prices_subtitle-text {
+        text-align: center;
+    }
+
+    .prices .section-title {
+        text-align: center;
+    }
+
+    .prices__list {
+        margin-top: 53px;
+    }
+
+    .prices-bg {
+        top: 38%;
+        left: unset;
+        right: -86%;
+    }
+
+    .prices__inner {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+    .coaching-staff {
+        margin-top: 40px;
+    }
+    .coaching-staff .section-title {
+        text-align: center;
+    }
+    .coaching-staff_subtitle-text {
+        text-align: center;
+    }
+    .coaching-staff_subtitle-text {
+        margin-top: 10px;
+    }
+    .coaching-staff__item {
+        padding-top: 40px   ;
+    }
+    .coaching-staff__list {
+        margin-top: -30px;
+    }
+    .coaching-staff {
+        margin-bottom: 76px;
+    }
+    .reviews .section-title {
+        text-align: center;
+    }
+    .reviews_subtitle-text {
+        text-align: center;
+        margin-top: 19px;
     }
 }

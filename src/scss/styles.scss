@@ -392,8 +392,10 @@ body {
     margin-top: 70px;
 }
 
-.prices {
-    margin-top: 499px;
+.prices__inner {
+    padding-top: 499px;
+    padding-bottom: 302px;
+    overflow: hidden;
 }
 
 .prices_subtitle-text {
@@ -412,6 +414,7 @@ body {
 
 .prices__list {
     margin-top: 84px;
+    position: relative;
 }
 
 .prices__item-title {
@@ -467,13 +470,14 @@ body {
 
 .prices-bg {
     position: absolute;
-    right: 0;
-    top: -430px;
+    top: 50%;
+    left: 44%;
+    transform: translateY(-50%);
     z-index: -1;
 }
 
 .coaching-staff {
-    margin-top: 232px;
+    margin-top: -70px;
     margin-bottom: 228px;
 }
 
@@ -805,5 +809,6 @@ ul.slick-dots {
 .photo-zala__inner {
     padding-top: 105px;
 }
+
 
 @import 'media_queries.scss';
