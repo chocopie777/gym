@@ -306,4 +306,22 @@
         text-align: center;
         margin-top: 19px;
     }
+    .reviews__bg {
+        position: static;
+        width: 100%;
+        transform: scale(1.1);
+        margin-left: -46px;
+    }
+    .reviews-slider {
+        margin-top: 0;
+    }
+    .reviews-slider__item-review-text {
+        font-size: 14px;
+    }
+    ul.slick-dots {
+        justify-content: center;
+    }
+    ul.slick-dots {
+        margin-top: 31px;
+    }
 }

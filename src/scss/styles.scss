@@ -522,12 +522,17 @@ body {
 .reviews__bg {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -390px;
     z-index: -1;
 }
 
-.reviews {
+.reviews__inner {
     position: relative;
+}
+.reviews__wrapper {
+    overflow: hidden;
+    padding-bottom: 487px;
+    padding-bottom: 630px;
 }
 
 .reviews-slider__item-sm-text {
@@ -591,8 +596,8 @@ ul.slick-dots {
 }
 
 .questions {
-    margin-top: 487px;
     margin-bottom: 149px;
+    margin-top: -143px;
 }
 
 .questions__title {
@@ -803,9 +808,11 @@ ul.slick-dots {
     overflow: hidden;
     padding-bottom: 192px;
 }
+
 .about__inner {
     position: relative;
 }
+
 .photo-zala__inner {
     padding-top: 105px;
 }
