@@ -408,7 +408,7 @@
                     </div>
                     <form class="questions-form" action="">
                         <div class="row questions-form__wrapper-inp">
-                            <div class="col d-flex justify-content-center">
+                            <div class="col d-flex justify-content-center questions-form__wrap">
                                 <div class="questions-form__input-wrap">
                                     <input class="questions-form__input" type="text" name="name" id="name"
                                         placeholder="Ваше имя">
@@ -425,24 +425,22 @@
                             </div>
                         </div>
                         <div class="row questions-form__wrapper-btn">
-                            <div class="col d-flex justify-content-center questions-form__wrap-btn">
+                            <div class="col-12 order-lg-0 order-1 d-flex justify-content-center questions-form__wrap-btn">
                                 <a class="questions-form__send-btn" href="#">Отправить</a>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <p class="questions__condition-text">
+                                    Нажимая на кнопку <span>«Отправить»</span>, Вы даете согласие на обработку персональных
+                                    данных и
+                                    соглашаетесь с политикой конфедициальности
+                                </p>
                             </div>
                         </div>
                     </form>
-                    <div class="row">
-                        <div class="col d-flex justify-content-center">
-                            <p class="questions__condition-text">
-                                Нажимая на кнопку <span>«Отправить»</span>, Вы даете согласие на обработку персональных
-                                данных и
-                                соглашаетесь с политикой конфедициальности
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <!--<section class="contacts">
+        <section class="contacts">
             <div class="container-fhd">
                 <div class="container-xl">
                     <div class="row">
@@ -457,12 +455,12 @@
                     </div>
                 </div>
                 <div class="contacts__bg-wrapper">
-                    <img src="img/map.jpg" alt="карта">
+                    <img class="contacts__img" src="img/map.jpg" alt="карта">
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- @@include('components/footer.html') -->
+    @@include('components/footer.html')
     @@include('components/script.html')
 </body>
 

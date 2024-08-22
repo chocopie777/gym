@@ -14,7 +14,7 @@ $('#phone').inputmask({"mask": "+7 (999) 999-99-99"});
 $('#email').inputmask('email');
 
 const burger = document.querySelector('.burger-btn');
-const menu = document.querySelector('.menu__list');
+const menu = document.querySelector('.header .menu__list');
 burger.addEventListener('click', () => {
     menu.classList.toggle('show-menu');
 })

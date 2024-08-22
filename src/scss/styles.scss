@@ -663,11 +663,9 @@ ul.slick-dots {
         font-family: "Gilroy-SemiBold";
     }
 }
-
-.questions-form__wrapper-btn {
+.questions-form__wrap-btn {
     margin-bottom: 16px;
 }
-
 .questions-form__input-wrap {
     position: relative;
 
@@ -747,11 +745,9 @@ ul.slick-dots {
 
 .vk-link {
     margin-left: 18px;
-    margin-top: 3px;
 }
 
 .insta-link {
-    margin-top: 3px;
     margin-left: 9px;
 }
 
@@ -816,6 +812,14 @@ ul.slick-dots {
 .photo-zala__inner {
     padding-top: 105px;
 }
-
+.contacts__img {
+    width: 100%;
+    min-height: 236px;
+    object-fit: cover;
+    display: block;
+}
+.contacts__bg-wrapper {
+    overflow: hidden
+}
 
 @import 'media_queries.scss';
