@@ -150,6 +150,12 @@
 
     .btn-more-details {
         margin-top: 32px;
+        position: relative;
+        z-index: 1;
+    }
+    .list-first-screen {
+        position: relative;
+        z-index: 1;
     }
 
     .first-screen-link-more {
