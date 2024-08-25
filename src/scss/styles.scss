@@ -9,6 +9,10 @@ body {
     color: white;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .section-title {
     font-family: 'Gilroy-Bold';
     font-size: 30px;
@@ -393,9 +397,8 @@ body {
 }
 
 .prices__inner {
-    padding-top: 499px;
+    margin-top: 499px;
     padding-bottom: 302px;
-    overflow: hidden;
 }
 
 .prices_subtitle-text {
@@ -474,7 +477,7 @@ body {
     left: 44%;
     transform: translateY(-50%);
     z-index: -1;
-}
+}   
 
 .coaching-staff {
     margin-top: -70px;
